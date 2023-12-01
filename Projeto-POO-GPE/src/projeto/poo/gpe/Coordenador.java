@@ -1,7 +1,7 @@
 package projeto.poo.gpe;
 
-import java.text.ParseException;
-import java.util.Scanner;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.ArrayList;
 //A Classe Coordenador herda os atributos da classe usuário, validando também se pode ser criado.
 //Também tem os atributos ArrayList de Coordenadores para verificar quantos Coordenadores foram cadastrados.
@@ -9,9 +9,10 @@ public class Coordenador extends Usuario {
     private ArrayList<Projeto> projetos = new ArrayList<>();
 
     //Método construtor quer irá atribuir os atributos da superclasse Usuario.
-    public Coordenador(String nome, String usuario, String senha, String instituicao){
-        super(nome,usuario,senha,instituicao);
+    public Coordenador(){
+        super("Caio", "CaioLemos","Caio@1234","UFC");
     }
+
 
     //Método que irá criar um projeto para o Coordenador.
     public void CadastrarProjeto(String nome_projeto, Coordenador coordenador, String instituicao){

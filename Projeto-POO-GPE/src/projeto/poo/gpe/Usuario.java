@@ -81,4 +81,22 @@ public class Usuario {
     public void setInstituicao(String instituicao) {
         this.instituicao = instituicao;
     }
+
+    public void setNome(String nome) {
+        if (nome != null){
+            this.nome = nome;
+        }
+    }
+
+    public void setUsuario(String usuario) {
+        if (usuario != null) {
+            this.usuario = usuario;
+        }
+    }
+
+    public void setSenha(String senha) {
+        if (senha != null){
+            this.senha = senha;
+        }
+    }
 }
