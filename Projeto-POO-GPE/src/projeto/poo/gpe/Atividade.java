@@ -17,10 +17,7 @@ public class Atividade {
     public Atividade(String nome ,String data_final) throws ParseException {
         this.data_final = new SimpleDateFormat("dd/MM/yyyy HH:mm").parse(data_final);
         this.nome = nome;
-
     }
-
-
 
     public String getNome() {
         return nome;

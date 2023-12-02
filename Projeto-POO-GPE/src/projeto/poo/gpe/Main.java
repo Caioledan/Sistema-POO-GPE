@@ -7,8 +7,8 @@ public class Main {
 
     public static void main(String[] args) throws ParseException {
 
-    ControllerLogin Login = new ControllerLogin();
-    Login.Login("CaioLemos","1234");
+    ViewLogin caio = new ViewLogin();
+    caio.Login();
 
 
 

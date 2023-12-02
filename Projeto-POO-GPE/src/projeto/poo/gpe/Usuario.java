@@ -18,26 +18,9 @@ public class Usuario {
                         this.usuario = usuario;
                         this.instituicao = instituicao;
                     }
-                    else {
-                        System.out.println("Instituicao invalida, repita o processo de criacao de usuario.");
-
-                    }
-                }
-                else {
-                    System.out.println("Usuario invalido, repita o processo de criacao de usuario.");
-
                 }
 
             }
-            else {
-                System.out.println("Senha invalida, repita o processo de criacao de usuario.");
-
-
-            }
-        }
-        else {
-            System.out.println("Nome invalido, repita o processo de criacao de usuario");
-
         }
     }
 
@@ -50,10 +33,7 @@ public class Usuario {
                         return true;
                     }
                 }
-
             }
-
-
         }
         return false;
     }
