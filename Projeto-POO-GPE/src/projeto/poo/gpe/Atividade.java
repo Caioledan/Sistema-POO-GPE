@@ -1,4 +1,3 @@
-
 package projeto.poo.gpe;
 
 import java.text.ParseException;
@@ -19,6 +18,20 @@ public class Atividade {
         this.nome = nome;
     }
 
+    public String setNome() {
+        if(!nome.isEmpty()){
+            this.nome = nome;
+        }
+        return nome;
+    }
+    
+    public Date setData_final() {
+        if(data_final != null){
+            this.data_final = data_final;
+        }
+        return data_final;
+    }
+    
     public String getNome() {
         return nome;
     }
