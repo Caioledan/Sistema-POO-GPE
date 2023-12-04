@@ -1,5 +1,5 @@
 
-package projeto.poo.gpe.Model;
+package projeto.poo.gpe;
 
 import projeto.poo.gpe.View.ViewLogin;
 
