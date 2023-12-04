@@ -1,5 +1,7 @@
 
-package projeto.poo.gpe;
+package projeto.poo.gpe.Model;
+
+import projeto.poo.gpe.View.ViewLogin;
 
 import java.text.ParseException;
 
