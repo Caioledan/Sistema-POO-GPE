@@ -45,7 +45,7 @@ public class ViewLogin {
                         if (usuario.equals(coord.coord.getUsuario()) && senha.equals(coord.coord.getSenha())) {
                             int action = 0;
                             do {
-                                System.out.println("Logado como Coordenador, o que deseja fazer: \n1 - Cadastrar Aluno\n2 - Cadastrar Servidor\n3 - Cadastrar membro externo\n4 - Cadastrar Projeto\n5 - Visualizar Projetos\n6 - Cancelar Projeto\n7 - Enviar Mensagem\n8 - Visualizar Mensagens\n9 - Cadastrar Atividade\n10 - Visualizar Atividades\n11 - Ver alunos\\nOutro numero - Parar Programa\nInsira o número: ");
+                                System.out.println("Logado como Coordenador, o que deseja fazer: \n1 - Cadastrar Aluno\n2 - Cadastrar Servidor\n3 - Cadastrar membro externo\n4 - Cadastrar Projeto\n5 - Visualizar Projetos\n6 - Cancelar Projeto\n7 - Enviar Mensagem\n8 - Visualizar Mensagens\n9 - Cadastrar Atividade\n10 - Visualizar Atividades\n11 - Ver alunos\nOutro numero - Parar Programa\nInsira o número: ");
                                 while (true) {
                                     try {
                                         action = scan.nextInt();
