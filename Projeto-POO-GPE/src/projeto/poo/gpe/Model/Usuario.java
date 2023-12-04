@@ -1,7 +1,7 @@
 package projeto.poo.gpe.Model;
 
 //A classe Usuario servirá de herança para as subclasses ALuno e Coordenador.
-public class Usuario {
+public abstract class Usuario {
     //Atributos da classe
     private String nome;
     private String usuario;
