@@ -5,6 +5,8 @@ import java.util.ArrayList;
 //A Classe Coordenador herda os atributos da classe usuário, validando também se pode ser criado.
 //Também tem os atributos ArrayList de Coordenadores para verificar quantos Coordenadores foram cadastrados.
 public class Coordenador extends Usuario {
+
+    //Atributos da classe
     private final ArrayList<Projeto> projetos = new ArrayList<>();
 
     private final ArrayList<Coordenador> coordenadores = new ArrayList<>();
@@ -48,6 +50,7 @@ public class Coordenador extends Usuario {
         }
     }
 
+    //Função que adiciona atividade em um projedo
     public void AdicionarAtividade(String nomeProjeto, String nomeAtividade, String datafinal) throws ParseException {
         for (Projeto projeto : projetos){
             if (nomeProjeto.equals(projeto.getNome())){

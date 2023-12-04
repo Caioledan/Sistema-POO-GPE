@@ -5,6 +5,7 @@ import projeto.poo.gpe.Model.Aluno;
 import projeto.poo.gpe.Model.Servidor;
 
 public class ControllerUsuario {
+    //Classe Não utilizada
     public void CadastrarAluno(String nome, String usuario, String senha, String instituicao){
         Aluno aluno = new Aluno(nome,usuario,senha,instituicao);
     }

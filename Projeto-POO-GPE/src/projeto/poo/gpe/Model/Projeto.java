@@ -1,12 +1,11 @@
 package projeto.poo.gpe.Model;
 
-//Importações para usos futuros.
-
 import java.text.ParseException;
 import java.util.ArrayList;
 
 //A classe projeto irá guardar todas as informações de determinado projeto, tais como as atividades, os alunos e o coordenador.
 public class Projeto {
+    //Atributos da classe
     private String nome;
     private Coordenador coordenador;
     private String instituicao;
@@ -16,8 +15,6 @@ public class Projeto {
     private static final ArrayList<String> mensagens = new ArrayList<>();
 
     //O método construtor da classe verificará se os dados são válidos.
-
-
     public Projeto(String nome, Coordenador coord, String instituicao) {
         if(nome != null && coord != null && instituicao != null){
             this.nome = nome;
@@ -26,30 +23,24 @@ public class Projeto {
             }
     }
 
-    //O método adicionar atividades utilizará o ParseException para alocar data.
     // Depois que criada, a atividade será adicionada no ArrayList Atividades.
     public void AdicionarAtividade(String nome, String data_final) throws ParseException {
         Atividade nova = new Atividade(nome,data_final);
         atividades.add(nova);
     }
 
-    //Do mesmo modo, quando um aluno é cadastrado ele será guardado no ArrayList Alunos.
-    /*
-    public void CadastrarAluno(String nome, String usuario, String senha, String instituicao) {
-        Aluno novo = new Aluno(nome, usuario, senha, instituicao);
-        alunosMatriculados.add(novo);
-    }*/
-
+    //Método para adicionar uma mensagem no projeto
     public void AdicionarMensagem(String mensagem){
         mensagens.add(mensagem);
     }
 
+    //Método pra matricular aluno no projeto
     public void MatricularAluno(Aluno aluno){
         alunosMatriculados.add(aluno);
     }
 
 
-    //Métodos getter e setters abaixo.
+    //Métodos getter abaixo.
     public ArrayList<Atividade> getAtividades() {
         return atividades;
     }

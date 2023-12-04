@@ -3,9 +3,7 @@ package projeto.poo.gpe.Model;
 import java.util.ArrayList;
 
 public class Aluno extends Usuario {
-    //Essa é uma classe aluno que servirá para termos um ArrayList de alunos em um projeto.
-    //Ou seja, será um objeto criado para termos o controle de alunos em determinado projeto.
-
+    //Atributos da classe
     private final ArrayList<Aluno> alunos = new ArrayList<>();
 
     //Método construtor abaixo:
@@ -14,6 +12,7 @@ public class Aluno extends Usuario {
         alunos.add(this);
     }
 
+    //Metodo para retornar o ArrayList de alunos
     public ArrayList<Aluno> getAlunos(){
         return alunos;
     }
